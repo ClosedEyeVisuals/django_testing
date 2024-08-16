@@ -5,10 +5,6 @@ from .base_t import BaseTest
 
 class TestRoutes(BaseTest):
 
-    @classmethod
-    def setUpTestData(cls):
-        super().setUpTestData()
-
     def test_pages_availability_for_anonymous(self):
         urls = (
             self.HOME_URL,

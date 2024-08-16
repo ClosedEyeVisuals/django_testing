@@ -4,10 +4,6 @@ from notes.forms import NoteForm
 
 class TestContent(BaseTest):
 
-    @classmethod
-    def setUpTestData(cls):
-        super().setUpTestData()
-
     def test_notes_list_for_different_users(self):
         users_assertions = (
             (self.author_client, True),
